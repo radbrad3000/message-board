@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 New Message
+  form(method="POST", action="/new")
+    div
+      label(for="user") Author's Name:
+      input#user(type="text", name="user", required=true)
+    div
+      label(for="text") Message:
+      textarea#text(name="text", required=true)
+    div
+      button(type="submit") Submit
+
+block content
+  h1 New Message 
+  form(method="POST", action="/new")
+    div 
+      label(for="user") Author's Name: 
+      input#user(type="text", name="user", required=true)
+    div 
+      label(for="text") Message:
+      textarea#text(name="text", required=true)
+    div 
+      button(type="submit") Submit
